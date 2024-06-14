@@ -18,7 +18,6 @@ class _HomePageState extends State<HomePage> {
         return Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            // centerTitle: true,
             title: const Text(
               'User Details',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
@@ -82,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                         style: const TextStyle(color: Colors.grey),
                       ),
                       onTap: () {
-                        _showEditDialog(
+                        showEditDialog(
                             context: context,
                             index: index,
                             controller: controller,
@@ -107,7 +106,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  void _showEditDialog({
+  void showEditDialog({
     required BuildContext context,
     required int index,
     required HomeController controller,
