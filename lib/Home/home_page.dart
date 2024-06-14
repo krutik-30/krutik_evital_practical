@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                     return ListTile(
                       leading: ClipOval(
                           child: Image.network(
-                        user.imageUrl ?? '',
+                        user.imageUrl ?? 'https://randomuser.me/api/portraits/women/4.jpg',
                         height: 50,
                         width: 50,
                         fit: BoxFit.cover,
